@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/objavistil.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pozadina">
+        <div class="pozadina1"></div>
+    </div>
+    <div class="pocetna">
+        <a href="proektnazadaca.html"><button  class="dugme" >Почетна страница</button></a>
+    </div>
+
+
+    <form>
+        <div id="prevtext"></div>
+        <input id="textbox" name="naslov" placeholder="Наслов:">
+        <div class="container" id="imgbox">
+
+
+
+
+            <input type="file" accept="image/png/jpeg/jpg" name="image" id="file" style="display: none;" onchange="loadFile(event)">
+            <label for="file"><img class="slika" src="https://static.thenounproject.com/png/1058226-200.png" alt=""></label>
+
+
+        </div>
+        <input id="model" type="text" name="model" placeholder="Модел:">
+        <input id="godina" type="text" name="godina" placeholder="Година:">
+        <input id="jacina" type="text" name="jacina" placeholder="Моќност:">
+        <input id="cena" type="text" name="cena" placeholder="Цена:">
+        <input id="kontakt" type="text" name="kontakt" placeholder="Контакт:">
+
+    </form>
+
+
+        <div class="plati">
+            <a href="plati.html"><button type="submit" class="dugme">Објави</button></a>
+        </div>
+
+
+    <script>
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const obj = Object.fromEntries(formData);
+
+            const json = JSON.stringify(obj);
+            localStorage.setItem('form', json);
+
+            window.location.href = "potvrdi.html";
+        })
+
+
+
+        
+        var imgbox= document.getElementById("imgbox")
+
+
+        var loadFile = function(event){
+            imgbox.style.backgroundImage = "url("+URL.createObjectURL(event.target.files[0])+")";
+        }
+        
+
+    </script>
+    
+</body>
+</html>

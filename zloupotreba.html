@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .pozadina{
+            background-image: url(https://www.shutterstock.com/image-vector/abstract-wallpaper-checkered-racing-flag-600nw-2398214737.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            z-index: -1;
+            }
+            .pozadina1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            background-color: rgb(255, 255, 255, 0.5);
+            width: 100%;
+            height: 100%;
+            }
+            .dugme{
+                background-color: black;
+                color: white;
+                border-width: 1px;
+                border-style: solid;
+                border-color: white;
+                height: 55px;
+                width: 140px;
+            }
+            .pocetna{
+                text-align: end;
+            }
+            button {
+                padding: 10px;
+                width: 70px;
+                color: white;
+                font-family: inherit;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 1px solid black;
+                background-color: black;
+                box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+                font-size: 0.9rem;
+            }
+            #kontakt{
+                top: 200px;
+                left: 28vh;
+                border: solid black 3px;
+                background: #fff;
+                color: #222;
+                background-size: cover;
+                background-position: center;
+                width: 1500px;
+                height: 150px;
+                margin: auto;
+                position: relative;
+            }
+            .prijavi{
+                text-align: end;
+                bottom: 0;
+            }
+            #prijavete{
+                margin-top: 24%;
+            }
+    </style>
+</head>
+<body>
+    <div class="pozadina">
+        <div class="pozadina1"></div>
+    </div>
+    <div class="pocetna">
+        <a href="oglasi.html"><button  class="dugme" >Почетна</button></a>
+    </div>
+    <h1>Пријавете потенционална измама</h1>
+    <h4>Празното место пополете го со вашето име и презиме, е-маил и начинот на измама</h4>
+    <textarea id="kontakt" placeholder="Пријави начин на измама:"></textarea>
+    <div class="prijavi">
+        <a href="proektnazadaca.html"><button  class="dugme" id="prijavete">Пријавете</button></a>
+    </div>
+    
+</body>
+</html>

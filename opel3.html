@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pocetna{
+            text-align: end;
+        }
+        .pocetna1{
+            text-align: end;
+        }
+        .nazad{
+            text-align: end;
+            margin-top: 3px;
+        }
+        button {
+            padding: 10px;
+            width: 170px;
+            color: white;
+            font-family: inherit;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: black;
+            box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+            font-size: 0.9rem;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+        }
+        .dugme{
+            width: 80px;
+        }
+        .opel1{
+            height: 500px;
+        }
+        @media screen and (max-width: 412px) {
+            .opel1{
+            height: 260px;
+            }
+        }
+        .ponuda1{
+            margin-top: 5%;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .pozadina{
+            background-image: url(https://www.shutterstock.com/image-vector/abstract-wallpaper-checkered-racing-flag-600nw-2398214737.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            z-index: -1;
+
+        }
+        .pozadina1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            background-color: rgb(255, 255, 255, 0.5);
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(6px);
+        }
+        .lista{
+            border: solid black 2px;
+            width: 500px;
+            word-spacing: 5px;
+            display: inline-block;
+            text-align: left;
+            list-style-type: none;
+        }
+        li{
+            border: solid black 2px;
+        }
+        .glavnalista{
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="pozadina">
+        <div class="pozadina1"></div>
+    </div>
+    <div class="pocetna">
+        <a href="proektnazadaca.html"><button>Почетна страница</button></a>
+    </div>
+    <div class="nazad">
+        <a href="oglasi.html"><button  class="dugme" >Назад</button></a>
+    </div>
+    <div class="ponuda1">
+        <div class="ponuda1">
+            <div class="ponuda1" style="margin-left: 700px;">
+                <img class="mySlides" src="https://www.zoom-auto.com/ZoomDroid/Thumb.ashx?i=1dsc07478.jpg&w=600&h=405" style="width:50%">
+                <img class="mySlides" src="https://www.carguru.sg/cdn/shop/files/Used-Car-OPEL-ASTRA-HB-Hatchback-24-Sep-20-Singapore-Used-Car-OPEL-Used-Car-02_1024x1024.jpg?v=1714291016" style="width:50%">
+                <img class="mySlides" src="https://img.longo.group/drz5zvoaf/image/upload/c_fill,h_480,w_640/axpkzlanxldtksvcnsbn.webp" style="width:50%">
+                <img class="mySlides" src="https://carwow-uk-wp-3.imgix.net/Astra-interior-dash.jpg" style="width:50%">
+            </div>
+                <div class="animacija">
+                    <button class="dugme" style="margin-top: 10px; margin-bottom: 10px;" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="dugme" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+        </div>    
+              
+    
+    
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+    
+    
+    
+
+    </div>
+    <div class="glavnalista">
+        <ul class="lista">
+            <li>Модел: Opel Astra Automatic</li>
+            <li>Година: 2020</li>
+            <li>Моќност: 150hp</li>
+            <li>Цена: 35000$</li>
+            <li>Контакт: 079-560-000</li>
+        </ul>
+    </div>
+    <div class="pocetna1">
+        <a href="zloupotreba.html"><button>Пријави злоупотреба</button></a>
+    </div>
+    
+</body>
+</html>

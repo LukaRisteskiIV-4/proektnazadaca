@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.pozadina{
+    background-image: url(https://www.shutterstock.com/image-vector/abstract-wallpaper-checkered-racing-flag-600nw-2398214737.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 130vh;
+    z-index: -1;
+}
+.pozadina1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.pocetna{
+    text-align: end;
+}
+button {
+    padding: 10px;
+    width: 170px;
+    color: white;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+  }
+  @media screen and (max-width: 412px) {
+    button{
+        height: 35px;
+        width: 140px;
+        text-align: end;
+    }
+}
+h3{
+    color: black;
+}
+.glav{
+    margin-top: 2cm;
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 11%;
+}
+.ponuda1{
+    padding: 20px;
+    display: inline-block;
+    float: none;
+    text-align: center;
+}
+.opel1{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel1{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    }
+}
+.opel2{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel2{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    }
+}
+.opel3{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel3{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    }
+}
+.glav2{
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 11%;
+}
+.ponuda2{
+    padding: 20px;
+    display: inline-block;
+    float: none;
+    text-align: center;
+}
+.opel4{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel4{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    }
+}
+.opel5{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel5{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    }
+}
+.opel6{
+    text-align: center;
+    height: 9.2cm;
+    width: 12cm;
+}
+@media screen and (max-width: 412px) {
+    .opel6{
+    height: 260px;
+    width: 330px;
+    text-align: center;
+    margin-left: 0%;
+    }
+}
+.logo{
+    text-align: center;
+}
+.logo1{
+    margin-top: 3cm;
+    width: 10cm;
+}
+@media screen and (max-width: 420px) {
+    div{
+        width: 320px;
+        text-align-last: right;
+    }
+}
