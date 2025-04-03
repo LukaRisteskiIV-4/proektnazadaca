@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>zdravo</h1>
+  <input type="text" placeholder="ime">
+  <button>Submit</button>
+
+  <ul>
+    
+  </ul>
+
+  <script>
+    const btnEl = document.querySelector('button');
+    const inputEl = documen.querySelector('input');
+    const listEl = document.querySelector('ul');
+
+    btnEl.addEventListener('click', () => {
+        const inputValue = inputEl.value;
+        listEl.insertAdjacentHTML('beforeend', `<li>${inputValue}</li>`);
+    })
+  </script>
+  
+</body>
+</html>
